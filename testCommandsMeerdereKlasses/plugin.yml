@@ -1,0 +1,13 @@
+name: testklasses
+main: me.jensie1996.nope.testClass
+version: 1.0
+commands:
+    pl:
+        description: Je hebt geen toegang tot de plugins
+        usage: /<command>
+    test:
+        description: test
+        usage: /<command>
+    lol:
+        description: lol
+        usage: /<command>
