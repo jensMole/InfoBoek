@@ -20,13 +20,14 @@ public class GetBook implements CommandExecutor {
 	  
 	  MakeBook maakBoek = new MakeBook();
 	  
+	  //als het command uitgevoerd is.
 	  public boolean onCommand(CommandSender zender, Command cmd, String arg2, String[] args)
 	  {
 	    Player speler = (Player)zender;
 	    
+	    //boek aanmaken met behulp van de MakeBook class getbook.
 	    this.maakBoek.getBook(this.config, speler);
 	    
 	    return true;
 	  }
-
 }

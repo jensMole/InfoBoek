@@ -12,39 +12,48 @@ import org.bukkit.inventory.meta.BookMeta;
 
 public class MakeBook {
 
+	//boek aanmaken.
 	public boolean makeBook(FileConfiguration config, Player speler)
 	  {
+		//boek aanmaken
 	    ItemStack book = new ItemStack(Material.WRITTEN_BOOK);
 	    
+	    //metadata verkrijgen van het boek.
 	    BookMeta bm = (BookMeta)book.getItemMeta();
 	    
 	    bm.setTitle(config.getString("Title"));
 	    bm.setAuthor(config.getString("Author"));
 	    
+	    //lijst voor al de pagina's
 	    List<String> lijstPaginas = config.getStringList("Book.Text");
 	    for (String tekst : lijstPaginas)
 	    {
+	      //tekst omzetten met kleur.
 	      String coloredText = ChatColor.translateAlternateColorCodes('&', tekst);
 	      
+	      //met een array de verschillende teksten er in zetten.
 	      bm.addPage(new String[] { coloredText });
 	    }
 	    book.setItemMeta(bm);
 	    
+	    //slotnummer verkrijgen waar het boekje moet komen.
 	    int slotnummer = config.getInt("Slot");
 	    
 	    slotnummer--;
-	    if ((slotnummer <= 0) || (slotnummer >= 10))
+	    if ((slotnummer <= 0) || (slotnummer >= 10)) //nakijken voor als het de juiste slot is.
 	    {
 	      ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
 	      console.sendMessage(ChatColor.RED + "Je hebt een verkeerd slot nummer opgegeven!! Dit moet tussen 1 en 9 liggen.");
 	      speler.sendMessage(ChatColor.RED + "Je hebt een verkeerd slot nummer opgegeven!! Dit moet tussen 1 en 9 liggen.");
 	      return false;
 	    }
+	    //geven van het boek.
 	    speler.getInventory().setItem(slotnummer, book);
 	    
 	    return true;
 	  }
 	  
+	  //verkrijgen van het boek met behulp van het command.
 	  public boolean getBook(FileConfiguration config, Player speler)
 	  {
 	    if ((speler instanceof Player))
