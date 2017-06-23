@@ -1,8 +1,0 @@
-########################################
-##
-##  Nope :: Config file
-##
-########################################
-
-## Dit is de tekst die een speler te zien krijgt. Bij aanpassing moet je de server reloaden.
-text: "Nope je hebt geen toegang"

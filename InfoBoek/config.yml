@@ -1,0 +1,37 @@
+########################################
+##
+##  Deze plugin zorgt ervoor dat je op
+##  een server een boek geeft aan de 
+##  nieuwe spelers met info over de
+##  server.
+##
+########################################
+
+
+## Titel van het boek.
+Title: Test Titel
+
+## Dit is de tekst voor in het boek.
+## iedere keer je een - gebruikt betekend dit een pagina.
+## Kleuren geef je aan met een & en daarna de kleurcode
+## zoals in het voorbeeld.
+## Je kan al de kleur codes gebruiken van in Minecraft: 
+## http://minecraft.gamepedia.com/Formatting_codes
+Book:
+  Text:
+  - "&5test"
+  - "&ltest"
+
+## Auteur van het boek.
+Author: Auteur
+
+## Welk slot het boekje moet komen. Standaard 5 (midden).
+## Ja kan opgeven van min. 1 (links) tot max. 9 (rechts).
+Slot: 5
+
+## Als iedere keer dat iemand joint het boekje moet krijgen.
+## Dit op true zorgt ervoor dat iedereen die joint, ook al zijn
+## ze al eens online geweest het boekje krijgt.
+## Standaard false. Dus alleen als je voor de eerste keer joind.
+## LET OP geschreven boeken worden verwijderd per keer dat men joind.
+iedere-join: false
