@@ -36,8 +36,9 @@ public class InfoBoekClass extends JavaPlugin {
 	  {
 	    if ((cmd.getName().equals("ibreload")) && ((zender instanceof Player)))
 	    {
+    	  saveDefaultConfig();
+	    	
 	      reloadConfig();
-	      saveConfig();
 	      
 	      zender.sendMessage(ChatColor.GREEN + "Config herladen.");
 	      

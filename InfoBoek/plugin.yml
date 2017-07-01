@@ -9,4 +9,3 @@ commands:
         description: Verkrijgen van het boek zonder te hoeven aanmelden.
         usage: /<command>
         permissions: ibgetbook
-        

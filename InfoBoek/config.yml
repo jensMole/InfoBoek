@@ -33,5 +33,5 @@ Slot: 5
 ## Dit op true zorgt ervoor dat iedereen die joint, ook al zijn
 ## ze al eens online geweest het boekje krijgt.
 ## Standaard false. Dus alleen als je voor de eerste keer joind.
-## LET OP geschreven boeken worden verwijderd per keer dat men joind.
+## LET OP geschreven boeken worden verwijderd per keer dat men joint.
 iedere-join: false
