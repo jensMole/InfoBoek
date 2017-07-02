@@ -1,5 +1,4 @@
-package me.jensie1996.infoBoek;
-
+package me.jensie1996.InfoBoek;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -7,6 +6,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
+/*
+Created By: MLGEditz
+*/
 public class GetBook implements CommandExecutor {
 
 	InfoBoekClass plugin;
@@ -24,10 +26,13 @@ public class GetBook implements CommandExecutor {
 	  public boolean onCommand(CommandSender zender, Command cmd, String arg2, String[] args)
 	  {
 	    Player speler = (Player)zender;
+	    if (cmd.getName().equalsIgnoreCase("ibgetbook")) {
 	    
 	    //boek aanmaken met behulp van de MakeBook class getbook.
 	    this.maakBoek.getBook(this.config, speler);
 	    
-	    return true;
+	    }
+		return true;
 	  }
+	  
 }

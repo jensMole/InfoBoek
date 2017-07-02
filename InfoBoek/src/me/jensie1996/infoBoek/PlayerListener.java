@@ -1,12 +1,15 @@
-package me.jensie1996.infoBoek;
+package me.jensie1996.InfoBoek;
 
-import org.bukkit.event.Listener;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+/*
+Created By: MLGEditz
+*/
 public class PlayerListener implements Listener {
 	//mainclass inladen
 	InfoBoekClass plugin;
