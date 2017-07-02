@@ -1,4 +1,4 @@
-package me.jensie1996.InfoBoek.mlgeditz.block;
+package me.jensie1996.infoBoek.mlgeditz.block;
 
 /*
 Created By: MLGEditz
@@ -13,8 +13,7 @@ import java.util.Scanner;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 
-import me.jensie1996.InfoBoek.InfoBoekClass;
-
+import me.jensie1996.infoBoek.InfoBoekClass;
 
 public class Contacter {
 

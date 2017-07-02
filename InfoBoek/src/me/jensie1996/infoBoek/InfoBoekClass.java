@@ -1,4 +1,4 @@
-package me.jensie1996.InfoBoek;
+package me.jensie1996.infoBoek;
 
 import java.io.File;
 
@@ -14,7 +14,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.jensie1996.InfoBoek.mlgeditz.block.Contacter;
+import me.jensie1996.infoBoek.mlgeditz.block.Contacter;
 
 /*
 Created By: MLGEditz

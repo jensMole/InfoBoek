@@ -1,4 +1,4 @@
-package me.jensie1996.InfoBoek;
+package me.jensie1996.infoBoek;
 
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
