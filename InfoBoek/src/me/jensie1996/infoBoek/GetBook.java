@@ -7,7 +7,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
 /*
-Created By: MLGEditz
+Created By: JensM TBG
 */
 public class GetBook implements CommandExecutor {
 

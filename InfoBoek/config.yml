@@ -32,6 +32,6 @@ Slot: 5
 ## Als iedere keer dat iemand joint het boekje moet krijgen.
 ## Dit op true zorgt ervoor dat iedereen die joint, ook al zijn
 ## ze al eens online geweest het boekje krijgt.
-## Standaard false. Dus alleen als je voor de eerste keer joind.
+## Standaard false. Dus alleen als je voor de eerste keer joint.
 ## LET OP geschreven boeken worden verwijderd per keer dat men joint.
 iedere-join: false

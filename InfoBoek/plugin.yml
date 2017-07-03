@@ -1,11 +1,11 @@
-name: infoboektest
-main: me.jensie1996.InfoBoek.InfoBoekClass
+name: infoboek
+main: me.jensie1996.infoBoek.InfoBoekClass
 author: Jensie1996
 website: http://www.thebelgiumgames.be
 version: 1.0
 commands:
     ibreload:
-        description: Reload de config.
+        description: Reload de config. Het kan zijn dat je de server toch nog moet herstarten.
         usage: /<command>
     ibgetbook:
         description: Verkrijgen van het boek zonder te hoeven aanmelden.

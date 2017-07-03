@@ -8,7 +8,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 /*
-Created By: MLGEditz
+Created By: JensM TBG
 */
 public class PlayerListener implements Listener {
 	//mainclass inladen

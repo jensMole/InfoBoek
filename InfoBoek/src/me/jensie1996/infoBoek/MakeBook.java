@@ -12,7 +12,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 
 /*
-Created By: MLGEditz
+Created By: JensM TBG
 */
 public class MakeBook {
 
