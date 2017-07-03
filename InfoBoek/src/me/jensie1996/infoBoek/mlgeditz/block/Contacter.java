@@ -1,7 +1,8 @@
 package me.jensie1996.infoBoek.mlgeditz.block;
 
-/*
-Created By: MLGEditz
+/** * Created by MLGEditz on 3-7-2017. 
+* No part of this publication may be reproduced, distributed, or transmitted in any form or by any means. 
+* Copyright Â© 2017 by MLGEditz (Jesse). 
 */
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -34,15 +35,15 @@ public class Contacter {
 					}
 					//Als Het Op de lijst staat dan stuurt hij dit:
 					Bukkit.broadcastMessage(" ");
-					Bukkit.broadcastMessage("§c§lInfo§f-§6§lBoek §2§lWaarschuwing");
+					Bukkit.broadcastMessage("Â§cÂ§lInfoÂ§f-Â§6Â§lBoek Â§2Â§lWaarschuwing");
 					Bukkit.broadcastMessage(" ");
-					Bukkit.broadcastMessage("§aDit is een bericht van de developer van: §cInfoBoek");
+					Bukkit.broadcastMessage("Â§aDit is een bericht van de developer van: Â§cInfoBoek");
 					Bukkit.broadcastMessage(" ");
-					Bukkit.broadcastMessage("§cJe hebt de algemene voorwaarden geschonden,");
-					Bukkit.broadcastMessage("§aVoor deze reden is de plugin §cuitgeschakeld.");
+					Bukkit.broadcastMessage("Â§cJe hebt de algemene voorwaarden geschonden,");
+					Bukkit.broadcastMessage("Â§aVoor deze reden is de plugin Â§cuitgeschakeld.");
 					Bukkit.broadcastMessage("");
 					Bukkit.broadcastMessage(
-							"§c§oWil je deze Block laten stoppen? Contacteer: §a§othe.belgiumg@gmail.com");
+							"Â§cÂ§oWil je deze Block laten stoppen? Contacteer: Â§aÂ§othe.belgiumg@gmail.com");
 					Bukkit.broadcastMessage("");
 					Bukkit.getPluginManager().disablePlugin(InfoBoekClass.pl);
 					unloadEvents();
